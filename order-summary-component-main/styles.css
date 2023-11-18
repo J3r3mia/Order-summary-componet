@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {  
+    /* Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-desktop.svg);
+    font-family: "Red Hat Display", sans-serif;
+}
+.container {
+    display: grid;
+    padding: 1rem;
+    max-width: 375px;
+    /* Not responding even with overflow set to hidden */
+    /* border-radius: 15px;
+    overflow: hidden; */
+}
+.container img {
+    display: block;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.container .details {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+}
+.details h2 {
+    font-weight: 900;
+}
+
+p , .price, .order_cancel {
+    color: var(--Desaturated-blue);
+}
+.slogan {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.plan {
+    display: flex;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.plan img {
+    height: 45px;
+    width: 45px;
+    margin-right: 1rem;
+}
+.plan div {
+    display: grid;
+    gap: .3rem;
+    margin-right: 4.3rem;
+}
+.plan a {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Bright-blue);
+}
+button {
+    height: 55px;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-weight: 900;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0.3em 0.3em 0.3em rgba(211, 255, 255, 0.6);
+}
+h4 {
+    font-weight: 700;
+}
+.order_cancel {
+    font-weight: 700;
+    text-decoration: none;
+}
+.order_cancel:hover {
+    color: var(--Dark-blue);
+}
+button:hover {
+    background-color: var(--Desaturated-blue);
+}
+.plan a:hover {
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+.attribution { 
+    font-size: 0.7rem; 
+    text-align: center; 
+    margin-top: 1rem;
+}
+.attribution a { 
+    font-size: larger;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(192, 85%, 34%); 
+}
